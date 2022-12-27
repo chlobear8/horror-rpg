@@ -14,5 +14,10 @@ describe('Item', () => {
   test('create a damage multiplier property', () => {
     const item = new Item("claw", 3);
     expect(item.damageMultiplier).toEqual(3);
+  });
+
+  test('create a special multiplier', () => {
+    const item = new Item("claw", 3, 2);
+    expect(item.specialMultiplier).toEqual(2);
   })
 })
