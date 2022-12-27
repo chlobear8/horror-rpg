@@ -19,5 +19,5 @@ describe('Item', () => {
   test('create a special multiplier', () => {
     const item = new Item("claw", 3, 2);
     expect(item.specialMultiplier).toEqual(2);
-  })
+  });
 })
