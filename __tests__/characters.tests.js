@@ -49,4 +49,10 @@ describe('Character', () => {
     player.levelUp();
     expect(player.level).toEqual(2)
   });
+
+  test('should add to damage when leveled up', () => {
+    const player = new Character(4, 4, 4);
+    player.levelUp();
+    expect(player.damage).toEqual(5);
+  })
 })
