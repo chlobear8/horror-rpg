@@ -11,6 +11,7 @@ export default class Character {
   }
 
   doesSpecial() {
+    this.specialTimes -= 1;
     return this.special;
   }
 }
