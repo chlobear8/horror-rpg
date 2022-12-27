@@ -25,6 +25,16 @@ describe('Character', () => {
 
   test('should lower special count on use', () => {
     const player = new Character(4, 4, 4);
-    expect(player.specialTimes()).toEqual(3);
+    player.doesSpecial();
+    expect(player.specialTimes).toEqual(3);
+  });
+
+  test('should return 0 when all spcials are used', () => {
+    const player = new Character(4, 4, 4);
+    player.doesSpecial();
+    player.doesSpecial();
+    player.doesSpecial();
+    player.doesSpecial();
+    expect(player.doesSpecial()).toEqual(0);
   });
 })
