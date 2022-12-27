@@ -14,5 +14,7 @@ describe('Inventory', () => {
   test('should have a max items in inventory', () => {
     const items = new Inventory();
     expect(items.maxItems).toEqual(3);
-  })
+  });
+
+  test()
 })
