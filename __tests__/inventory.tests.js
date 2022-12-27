@@ -19,8 +19,8 @@ describe('Inventory', () => {
 
   test('should add item to inventory', () => {
     const items = new Inventory();
-    const item = new Item("claw");
-    items.addItem(item);
-    expect(items.items).toEqual([item]);
+    const claw = new Item("claw");
+    items.addItem(claw);
+    expect(items.items).toEqual([claw]);
   });
 })

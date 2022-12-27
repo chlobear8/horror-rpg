@@ -4,4 +4,6 @@ export default class Item {
     this.damageMultiplier = damageMultiplier;
     this.specialMultiplier = specialMultiplier;
   }
+
+  
 } 

@@ -3,4 +3,8 @@ export default class Inventory {
     this.items = [];
     this.maxItems = 3;
   }
+
+  addItem(item) {
+    this.items.push(item);
+  }
 }
