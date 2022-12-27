@@ -10,4 +10,9 @@ describe('Inventory', () => {
     const items = new Inventory();
     expect(items.items).toEqual([]);
   });
+
+  test('should have a max items in inventory', () => {
+    const items = new Inventory();
+    expect(items.maxItems).toEqual(3);
+  })
 })
