@@ -1,24 +1,12 @@
-export default class Character {
+import Battleable from "./battleable";
+
+export default class Character extends Battleable {
   constructor(damage, special, health) {
-    this.damage = damage;
-    this.special = special;
-    this.specialTimes = 4;
-    this.health = health;
+    super(damage, special, health);
+    this.level = 1;
   }
 
-  attack() {
-    return this.damage;
-  }
-
-  doesSpecial() {
-    this.specialTimes -= 1;
-    if (this.specialTimes <= 0) {
-      return 0;
-    } 
-    return this.special;
-  }
-
-  takeDamage(damage) {
-    this.health -= damage;
+  levelUp() {
+    this.level += 1;
   }
 }
