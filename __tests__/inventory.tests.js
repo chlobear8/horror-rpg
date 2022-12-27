@@ -8,6 +8,6 @@ describe('Inventory', () => {
 
   test('should create an empty items array', () => {
     const items = new Inventory();
-    expect(this.items).toEqual([]);
-  })
+    expect(items.items).toEqual([]);
+  });
 })
