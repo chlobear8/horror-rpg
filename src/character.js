@@ -17,4 +17,8 @@ export default class Character {
     } 
     return this.special;
   }
+
+  takeDamage(damage) {
+    this.health -= damage;
+  }
 }
