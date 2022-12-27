@@ -54,5 +54,15 @@ describe('Character', () => {
     const player = new Character(4, 4, 4);
     player.levelUp();
     expect(player.damage).toEqual(5);
-  })
+  });
+  
+  test('should add another turn to special for every other level', () => {
+    const player = new Character(4, 4, 4);
+    player.levelUp();
+    expect(player.specialTimes).toEqual(5);
+    player.levelUp();
+    expect(player.specialTimes).toEqual(5);
+    player.levelUp();
+    expect(player.specialTimes).toEqual(6);
+  });
 })
