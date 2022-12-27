@@ -16,5 +16,4 @@ describe('Inventory', () => {
     expect(items.maxItems).toEqual(3);
   });
 
-  test()
 })
