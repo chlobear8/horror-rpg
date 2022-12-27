@@ -8,5 +8,6 @@ export default class Character extends Battleable {
 
   levelUp() {
     this.level += 1;
+    this.damage +=1;
   }
 }
