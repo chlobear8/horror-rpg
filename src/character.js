@@ -8,6 +8,9 @@ export default class Character {
 
   attack() {
     return this.damage;
+  }
 
+  doesSpecial() {
+    return this.special;
   }
 }
