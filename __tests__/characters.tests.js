@@ -37,4 +37,10 @@ describe('Character', () => {
     player.doesSpecial();
     expect(player.doesSpecial()).toEqual(0);
   });
+
+  test('should subtract from health when damage is taken', () => {
+    const player = new Character(4, 4, 4);
+    player.takeDamage(1);
+    expect(player.health).toEqual(3);
+  });
 })
