@@ -43,4 +43,10 @@ describe('Character', () => {
     player.takeDamage(1);
     expect(player.health).toEqual(3);
   });
+
+  test('should add level when called on', () => {
+    const player = new Character(4, 4, 4);
+    player.levelUp();
+    expect(player.level).toEqual(2)
+  });
 })
