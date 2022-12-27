@@ -22,4 +22,9 @@ describe('Character', () => {
     const player = new Character(4, 4, 4);
     expect(player.doesSpecial()).toEqual(4);
   });
+
+  test('should lower special count on use', () => {
+    const player = new Character(4, 4, 4);
+    expect(player.specialTimes()).toEqual(3);
+  });
 })
