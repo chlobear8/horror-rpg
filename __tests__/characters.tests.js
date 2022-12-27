@@ -12,4 +12,9 @@ describe('Character', () => {
     expect(player.damage).toEqual(4);
     expect(player.special).toEqual(4);
   });
+
+  test('should do damage', () => {
+    const player = new Character(4, 4, 4);
+    expect(player.attack()).toEqual(4);
+  })
 })
