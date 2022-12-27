@@ -7,7 +7,12 @@ describe('Item', () => {
   });
 
   test('create a name property', () => {
-    const item = new Item();
-    expect(item.name).toEqual(claws);
+    const item = new Item("claw");
+    expect(item.name).toEqual("claw");
+  });
+
+  test('create a damage multiplier property', () => {
+    const item = new Item("claw", 3);
+    expect(item.damageMultiplier).toEqual(3);
   })
 })
