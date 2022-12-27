@@ -16,5 +16,10 @@ describe('Character', () => {
   test('should do damage', () => {
     const player = new Character(4, 4, 4);
     expect(player.attack()).toEqual(4);
-  })
+  });
+
+  test('should return special damage if has special count', () => {
+    const player = new Character(4, 4, 4);
+    expect(player.doesSpecial()).toEqual(4);
+  });
 })
