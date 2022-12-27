@@ -9,5 +9,7 @@ describe('Character', () => {
   test('should set properties on class', () => {
     const player = new Character(4, 4, 4);
     expect(player.health).toEqual(4);
+    expect(player.damage).toEqual(4);
+    expect(player.special).toEqual(4);
   });
 })
