@@ -40,5 +40,15 @@ describe('Inventory', () => {
     items.addItem(claw);
     items.removeItem("claw");
     expect(items.items).toEqual([]);
+  });
+
+  test('should only remove one instance of item', () => {
+    const items = new Inventory();
+    const claw = new Item("claw");
+    items.addItem(claw);
+    items.addItem(claw);
+    items.addItem(claw);
+    items.removeItem("claw");
+    expect(items.items).toEqual([claw, claw]);
   })
 })
