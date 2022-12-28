@@ -5,6 +5,9 @@ export default class Inventory {
   }
 
   addItem(item) {
+    if (this.items.length >= this.maxItems) {
+      return;
+    }
     this.items.push(item);
   }
 }
