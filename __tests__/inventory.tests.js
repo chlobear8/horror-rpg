@@ -23,4 +23,14 @@ describe('Inventory', () => {
     items.addItem(claw);
     expect(items.items).toEqual([claw]);
   });
+
+  test('should only allow 3 items', () => {
+    const items = new Inventory();
+    const claw = new Item("claw");
+    items.addItem(claw);
+    items.addItem(claw);
+    items.addItem(claw);
+    items.addItem(claw);
+    expect(item.items).toEqual([claw, claw, claw]);
+  });
 })
