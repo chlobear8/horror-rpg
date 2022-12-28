@@ -31,6 +31,14 @@ describe('Inventory', () => {
     items.addItem(claw);
     items.addItem(claw);
     items.addItem(claw);
-    expect(item.items).toEqual([claw, claw, claw]);
+    expect(items.items).toEqual([claw, claw, claw]);
   });
+
+  test('should remove item from inventory', () => {
+    const items = new Inventory();
+    const claw = new Item("claw");
+    items.addItem(claw);
+    items.removeItem("claw");
+    expect(items.items).toEqual([]);
+  })
 })
