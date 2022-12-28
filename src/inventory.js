@@ -10,4 +10,10 @@ export default class Inventory {
     }
     this.items.push(item);
   }
+
+  removeItem(itemName) {
+    this.items = this.items.filter(function(item) {
+      return item.name != itemName;
+    })
+  }
 }
