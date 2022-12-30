@@ -11,9 +11,12 @@ export default class Inventory {
     this.items.push(item);
   }
 
-  removeItem(itemName) {
-    this.items = this.items.filter(function(item) {
-      return item.name != itemName;
-    })
+removeItem(itemName) {
+  for (let i = 0; i < this.items.length; i++) {
+    if (this.items[i].name === itemName) {
+    this.items.splice(i,1)
+    return;
+    }
+  }
   }
 }
