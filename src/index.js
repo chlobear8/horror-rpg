@@ -25,12 +25,6 @@ function handleCharacterHidden(event) {
   document.querySelector("div#firstBattle").removeAttribute("class", "hidden");
 }
 
-function handleFirstBattleHidden(event) {
-  event.preventDefault();
-  document.querySelector()
-}
-
-
 window.addEventListener("load", function() {
   this.document.querySelector("#characterSelectForm").addEventListener("submit", handleCharacterSelectForm)
 })
