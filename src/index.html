@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title></title>
+  <title>Horror RPG</title>
 </head>
 <body>
-  
+  <h1>Welcome to [enter witty name]!</h1>
+  <div id="characterSelectForm" class="hidden">
+  <form id="radio-form">
+    <label for="character">Pick your character:</label>
+    <br>
+    <select name="char" id="char">
+      <option name="char" value="freddy">Freddy Krueger</option>
+      <option name="char" value="jason">Jason</option>
+      <option name="char" value="michael">Michael Myers</option>
+    </select>
+    </label>
+    <button type="submit" class="btn">Submit Selection</button>
+  </form>
+  </div>
+  <div id="firstBattle" class="hidden">
+    <p>FIRST BATTLE!</p>
+    <ul><span id="char1"></span>
+      <li>Health<span id="health"></span></li>
+      <li>Special Attacks<span id="specAttack"></span></li>
+      <li>Level<span id="level"></span></li>
+    </ul>  
+    <ul1><span id="enemy1"></span>
+      <li>Health<span id="enemyHealth"></span></li>
+      <li>Level<span id="enemyLevel"></span></li>
+    </ul1>
+    <button type="button" class="btn" id="attack">Attack</button>
+    <button type="button" class="btn" id="specialAttack">Special Attack</button>
+  </div>
 </body>
 </html>
